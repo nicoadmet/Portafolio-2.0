@@ -16,7 +16,7 @@ const ParticlesBg = () => {
   }, []);
 
   const particlesLoaded = (container) => {
-    // console.log("Partículas cargadas:", container);
+    console.log("Partículas cargadas:", container);
   };
 
   // Esta es la configuración clave que imita el diseño de tu imagen

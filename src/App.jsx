@@ -1,6 +1,4 @@
-import Hero from "./pages/Hero"
-import Proyects from "./pages/Proyects"
-
+import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import CasesSlider from "./components/CasesSlider"
 
