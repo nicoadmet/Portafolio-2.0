@@ -3,9 +3,9 @@ import ParticlesBg from "../components/ParticlesBg";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-dark-bg text-white px-6 overflow-hidden font-sans">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center bg-dark-bg text-white px-6 overflow-hidden font-sans border-b border-white/5">
       
-      {/* 1. EL FONDO INTERACTIVO (Detrás de todo) */}
+      {/* 1. EL FONDO INTERACTIVO */}
       <ParticlesBg />
       
       {/* 2. Resplandor radial sutil (para dar profundidad al centro) */}

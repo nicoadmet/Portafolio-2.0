@@ -21,6 +21,7 @@ const ParticlesBg = () => {
 
   // Esta es la configuración clave que imita el diseño de tu imagen
   const options = {
+    fullScreen: { enable: false },
     fpsLimit: 120,
     interactivity: {
       events: {
