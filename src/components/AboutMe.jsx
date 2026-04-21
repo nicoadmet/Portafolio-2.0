@@ -20,8 +20,8 @@ const AboutMe = () => {
               <div className="w-20 h-[2px] bg-blue-500 mb-8"></div>
               
               <a 
-                href="/CV_Nicolas_Admet.pdf" 
-                download 
+                href="src\cv\nicolasadmet.pdf"
+                target="_blank" 
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-black rounded-xl text-xs tracking-widest hover:scale-105 transition-all uppercase shadow-lg shadow-blue-500/10"
               >
                 Descargar CV 
