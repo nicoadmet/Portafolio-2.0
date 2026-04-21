@@ -1,18 +1,27 @@
 import { useState, useEffect } from "react";
+import { useScroll } from "../hooks/useScroll";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { scrollTo } = useScroll();
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "unset";
   }, [isOpen]);
 
   const navLinks = [
-    { name: "Inicio", href: "#" },
-    { name: "Proyectos", href: "#proyectos" },
-    { name: "Sobre Mí", href: "#servicios" },
-    { name: "Habilidades", href: "#industrias" },
+    { name: "Inicio", id: "hero" },
+    { name: "Proyectos", id: "projects" },
+    { name: "Sobre Mí", id: "about" },
+    { name: "Habilidades", id: "skills" },
   ];
+
+  const handleNavClick = (e, id) => {
+    e.preventDefault(); 
+    scrollTo(id);      
+    setIsOpen(false); 
+  };
 
   return (
     <>
@@ -20,21 +29,31 @@ const Navbar = () => {
         
         {/* LOGO */}
         <div>
-            <a href="#" className="text-xl font-bold tracking-tighter text-white">
-            Nicolás<span className="text-accent-blue">Admet</span>
-            </a>
+            <button 
+            onClick={(e) => handleNavClick(e, 'hero')} 
+            className="text-xl font-bold tracking-tighter text-white cursor-pointer"
+          >
+            Nicolás<span className="text-blue-400">Admet</span>
+          </button>
         </div>
 
         {/* LINKS DESKTOP */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-sm text-gray-400 hover:text-white transition-colors">
+            <button 
+              key={link.name} 
+              onClick={(e) => handleNavClick(e, link.id)}
+              className="text-sm text-gray-400 hover:text-white transition-colors cursor-pointer"
+            >
               {link.name}
-            </a>
+            </button>
           ))}
-          <a href="#contacto" className="ml-4 px-6 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-gray-200 transition-all">
+          <button 
+            onClick={(e) => handleNavClick(e, 'contact')}
+            className="ml-4 px-6 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-gray-200 transition-all cursor-pointer"
+          >
             Contactar ↗
-          </a>
+          </button>
         </div>
 
         {/* BOTÓN HAMBURGUESA (Aseguramos que siempre sea clickable) */}

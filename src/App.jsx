@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import CasesSlider from "./components/CasesSlider"
 import AboutMe from "./components/AboutMe"
 import Skills from "./components/Skills"
+import Contact from "./components/Contact"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <CasesSlider />
         <AboutMe />
         <Skills />
+        <Contact />
       </div>
     </main>
     
