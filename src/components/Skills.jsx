@@ -5,7 +5,7 @@ const Skills = () => {
     {
       title: "Frontend",
       color: "from-blue-500 to-cyan-400",
-      skills: ["React.js", "Next.js", "JavaScript", "Tailwind CSS", "Bootstrap", "HTML5", "CSS3", "Vite"]
+      skills: ["React.js", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Bootstrap", "HTML5", "CSS3", "Vite"]
     },
     {
       title: "Backend & DB",
