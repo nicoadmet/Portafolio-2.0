@@ -22,7 +22,7 @@ const CasesSlider = () => {
       image: oniria,
       tags: ["E-commerce", "B2B", "Google sheets"],
       tech: ["react", "tailwindcss", "googlesheets"],
-      link: "https://oniria-distribuidorar-bebidas.vercel.app/"
+      link: "https://oniria-distribuidora-bebidas.vercel.app/"
     },
     { 
       id: 2, 
