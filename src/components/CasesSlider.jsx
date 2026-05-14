@@ -30,7 +30,7 @@ const CasesSlider = () => {
       title: "Eco Cabañas", 
       description: "Sistema para hotelería con dashboards para clientes y administradores.",
       image: ecoCabanas,
-      tags: ["Fullstack", "SaaS", "Dashboard"],
+      tags: ["Fullstack", "ABM", "Dashboard"],
       tech: ["react", "express", "nodedotjs", "jsonwebtokens", "bootstrap", "vite"],
       link: "https://ecocabanas.vercel.app/"
     },
