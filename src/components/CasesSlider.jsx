@@ -34,16 +34,6 @@ const CasesSlider = () => {
       tech: ["react", "express", "nodedotjs", "jsonwebtokens", "bootstrap", "vite"],
       link: "https://ecocabanas.vercel.app/"
     },
-    { 
-      id: 3, 
-      topTag: "100% SPA — High Performance", 
-      title: "Freshness", 
-      description: "Supermercado online diseñado como una SPA. Enfoque en la fluidez de navegación y optimización.",
-      image: freshness,
-      tags: ["E-commerce", "SPA", "UX/UI"],
-      tech: ["react", "nextdotjs", "bootstrap"],
-      link: "https://freshness-tau.vercel.app/" 
-    }
   ];
 
   // Triplicamos para asegurar que el loop infinito no tenga saltos visuales
