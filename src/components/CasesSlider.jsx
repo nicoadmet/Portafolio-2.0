@@ -50,7 +50,7 @@ const CasesSlider = () => {
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               centeredSlides={true}
-              loop={true}
+              rewind={true}
               spaceBetween={20}
               slidesPerView={1.05}
               autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
